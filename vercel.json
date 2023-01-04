@@ -7,7 +7,7 @@
         }
     ],
     "functions": {
-        "api/app.py": {
+        "api/users/app.py": {
           "memory": 1024,
           "maxDuration": 10
         }
