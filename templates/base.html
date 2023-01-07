@@ -12,11 +12,12 @@
     <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">      
 </head>
 
-<body>
+<body style="background-color:rgb(222, 240, 242);">
     <nav class="navbar navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Convolutional Neural Network</a>
-            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">About this project</button>
+            <a class="navbar-brand" href="{{ url_for('index')}}">Home</a>
+            <a class="navbar-brand" href="{{ url_for('about')}}">About</a>
+            <!-- <button class="btn btn-outline-secondary my-2 my-sm-0"><a href="{{ url_for('about')}}">About this project</a></button> -->
         </div>
     </nav>
     <div class="container">

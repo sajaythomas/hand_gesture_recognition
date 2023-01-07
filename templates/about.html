@@ -1,0 +1,18 @@
+{% extends "base.html" %} {% block content %}
+
+<h2 style="font-family:'Helvetica'"><center>About This Project</center></h2>
+
+<div class="about-page">
+    <p class="about-height">
+        This project is a hand gesture classifier using Convolutional Neural Network (CNN) where it can classify sign languages on individual letters or numbers.
+        The data collected is from Massey University which comprises of 2515 images of 0-9 and A-Z from 5 different subjects.
+        The model was trained on the EfficientNet B5 architecture.
+        EfficientNet is a family of neural network architectures that were designed to be more efficient in terms of computational 
+        resources while still achieving strong accuracy on a wide range of tasks, such as image classification, object detection, 
+        and machine translation.
+        For this project, the model acheived 97% accuracy.
+
+    </p>
+</div>
+
+{% endblock %}

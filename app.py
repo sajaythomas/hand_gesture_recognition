@@ -20,7 +20,7 @@ from flask import Flask, redirect, url_for, request, render_template
 # Define a flask app
 app = Flask (__name__)
 
-model_path = 'transfer_learning_efficientnetb7_si.h5'
+model_path = 'transfer_learning_efficientnetb5_sd.h5'
 
 # Load Model
 model = load_model(model_path)
@@ -56,6 +56,10 @@ def model_predict (img_path, model):
 @app.route('/', methods = ['GET'])
 def index():
     return render_template('index.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
 
 @app.route('/predict', methods = ['GET', 'POST'])
 def upload():

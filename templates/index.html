@@ -1,15 +1,17 @@
 {% extends "base.html" %} {% block content %}
 
-<h2><center>Hand Gesture Recognition</center></h2>
+<h2 style="font-family:'Helvetica'"><center>Hand Gesture Classifier</center></h2>
 
-<div class="row">
+<center><img src="{{url_for('static', filename='asl.png')}}" alt="asl" width="500" height="250"></center>
+
+<div class="row" style="font-family:'Helvetica'">
     <div class="column">
-      <h3>Steps to predict hand gestures</h3>
+      <h3>Steps to classify hand gestures</h3>
       <ol type="1">
         <li>Click on the "Choose an image" button</li>
         <li>Select an image from anywhere on your computer (supported images: png, jpg, jpeg)</li>
-        <li>Click on the "Predict" button</li>
-        <li>The result shows the predicted hand gesture with the highest confidence</li>
+        <li>Click on the "Classify" button</li>
+        <li>The result shows the classified hand gesture with the highest confidence</li>
       </ol>
       <form class="btn-center" id="upload-file" method="post" enctype="multipart/form-data">
         <label for="imageUpload" class="upload-label">
@@ -19,14 +21,14 @@
       </form>
     </div>
     <div class="column">
-        <center>
+      <center>
         <div class="image-section" style="display:none;">
             <div class="img-preview">
                 <div id="imagePreview">
                 </div>
             </div>
             <div>
-                <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Predict!</button>
+                <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Classify!</button>
             </div>
         </div>
     
@@ -35,7 +37,7 @@
         <h3 id="result">
             <span> </span>
         </h3>
-    </center>
+      </center>
     </div>
   </div>
 
