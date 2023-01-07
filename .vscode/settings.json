@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/f3a6c6ba-b7cb-4d76-ad2b-ed270871ff2c/AppServices/subscriptions/f3a6c6ba-b7cb-4d76-ad2b-ed270871ff2c/resourceGroups/appsvc_linux_centralus_basic/providers/Microsoft.Web/sites/gesture-classifier-XYZ",
+    "appService.deploySubpath": "."
+}
